@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,50 +8,98 @@
     <title>tech</title>
     <link rel="stylesheet" href="styleTech.css">
 </head>
+
 <body>
-   
-<div class="content">
-
-    <div class="slides">
-        <input type="radio" name="slide" id="slide1" checked>
-        <input type="radio" name="slide" id="slide2">
-        <input type="radio" name="slide" id="slide3">
-        <input type="radio" name="slide" id="slide4">
-        <input type="radio" name="slide" id="slide5">
 
 
-        <div class="slideS1"><img src="img/iphone.jpg" alt=""></div>
-
-        <div class="slide"><img src="img/nitro.jpg" alt=""></div>
-
-        <div class="slide"><img src="img/fone-apple1.png" alt=""></div>
-
-        <div class="slide"><img src="img/mouse-gamer.png" alt=""></div>
-
-        <div class="slide"><img src="img/tablet.webp" alt=""></div>
-        
-
-
-        <div class="navigation">
-            <label class="bar" for="slide1"></label>
-            <label class="bar" for="slide2"></label>
-            <label class="bar" for="slide3"></label>
-            <label class="bar" for="slide4"></label>
-            <label class="bar" for="slide5"></label>
+    <div class="container1">
+        <div id="mySidebar" class="mySidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">LOGIN</a>
+            <a href="#">CADASTRAR</a>
+            <a href="#">SUPORTE</a>
+            <a href="#">Contact</a>
         </div>
 
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        </div>
+
+    </div>
+    <h1>TECHall enterpise</h1>
+
+
+    <div class="logos">
+        <a href="https://www.instagram.com/samurrocha/" target="_blank"><img src="img/instagram.png" alt=""></a>
+        <a href="https://www.instagram.com/samatra/" target="_blank"><img src="img/malfoi.jfif" alt=""></a>
+    </div>
+
+    <p>Somos uma empresa focada em procurar e entregar os melhores produtos do
+        do mercado nacional e internacional, presendo sempre pelo custo benefício
+        do produto e pelo bem-estar do cliente.
+    </p>
+
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides">
+            <img src="img/ipad.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+
+            <img src="img/iphone.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides">
+
+            <img src="img/mouse-gamer.png" style="width:100%">
+
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+
+
+
+
+    <div class="topnav">
+
+        <a href="#news">CELULARES</a>
+        <a href="#contact">NOTEBOOKS</a>
+        <a href="#OUTROS">OUTROS</a>
+        <a class="active" href="#PROMOÇÕES">PROMOÇÕES</a>
+
+        <form action="pesquisar">
+            <input type="text" name="strSearch" id="textSerch" placeholder="iphone 14">
+            <input type="submit" value="pesquisar" id="btnSearch" class="strSearch">
+        </form>
 
     </div>
 
+    <div class="publicados">
+        <a href="#1" target="_blank"> <img src="img/4090.JPEG" alt=""> </a>
+        <a href="#1" target="_blank"> <img src="img/airpods.JPEG" alt=""> </a>
+        <a href="#1" target="_blank"> <img src="img/headsetGame.JPEG" alt=""> </a>
+        <a href="#1" target="_blank"> <img src="img/ipad.jpg alt=""> </a>
+        <a href="#1" target="_blank"> <img src="img/iphone.jpg" alt=""> </a>
+        <a href="#1" target="_blank"> <img src="img/MonitorGamer.JPEG" alt=""> </a>
+        <a href="#1" target="_blank"> <img src="img/mouse-gamer.png" alt=""> </a>
+        <a href="#1" target="_blank"> <img src="img/nitro.jpg" alt=""> </a>
+        <a href="#1" target="_blank"> <img src="img/teclado mini.JPEG" alt=""> </a>
+    </div>
+       
+        <script src="scriptTech.js"></script>
 
-
-
-
-
-
-
-
-</div>
 
 </body>
+
 </html>
